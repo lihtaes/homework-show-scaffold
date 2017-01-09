@@ -1,0 +1,2 @@
+class PostTemplate < ApplicationRecord
+end

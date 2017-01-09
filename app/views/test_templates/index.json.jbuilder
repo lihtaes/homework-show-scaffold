@@ -1,0 +1,1 @@
+json.array! @test_templates, partial: 'test_templates/test_template', as: :test_template

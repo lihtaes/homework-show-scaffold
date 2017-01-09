@@ -1,0 +1,1 @@
+json.array! @final_tests, partial: 'final_tests/final_test', as: :final_test

@@ -1,0 +1,32 @@
+<%= form_for(post_template) do |f| %>
+  <% if post_template.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post_template.errors.count, "error") %> prohibited this post_template from being saved:</h2>
+
+      <ul>
+      <% post_template.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :new_thing %>
+    <%= f.text_field :new_thing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :other_thing %>
+    <%= f.text_field :other_thing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :another_thing %>
+    <%= f.text_area :another_thing %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

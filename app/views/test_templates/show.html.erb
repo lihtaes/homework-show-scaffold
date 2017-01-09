@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First:</strong>
+  <%= @test_template.first %>
+</p>
+
+<p>
+  <strong>Last:</strong>
+  <%= @test_template.last %>
+</p>
+
+<%= link_to 'Edit', edit_test_template_path(@test_template) %> |
+<%= link_to 'Back', test_templates_path %>

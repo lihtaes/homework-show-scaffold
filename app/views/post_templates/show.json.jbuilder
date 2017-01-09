@@ -1,0 +1,1 @@
+json.partial! "post_templates/post_template", post_template: @post_template
