@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :guides
+  resources :posts
   resources :final_tests
   resources :test_templates
   resources :post_templates
